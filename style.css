@@ -10,8 +10,20 @@
 
 h1 {
   font-size: 192px;
+  background-image: url(img/wave_bg.png);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: wave 25s linear infinite;
 }
 
+@keyframes wave {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
 h2 {
   font-size: 48px;
 }
