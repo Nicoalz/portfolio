@@ -100,3 +100,53 @@ section {
     color :#E288B7;
 }
 
+/*-------------------------------------------------------Skills*/
+
+
+.grille-skills {
+    max-width: 1260px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2.2fr 4.4fr 1fr 1fr 1.4fr;
+    row-gap: 20px;
+    column-gap: 40px;
+
+    div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div:nth-of-type(2) {
+        grid-column: 2;
+        grid-row: 2 / 5;
+        flex-direction: column;
+        justify-content: left;
+        padding-top: 100px;
+
+        div{
+            justify-content: space-evenly;
+        }
+
+        p {
+            padding: 50px;
+            text-align: justify;
+        }
+    }
+
+    div:nth-of-type(4) {
+        grid-column: 1;
+        grid-row: 4;
+        img {
+            max-height: 50px;
+            margin: 0 20px;
+        }
+    }
+
+    
+
+}
