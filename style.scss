@@ -513,7 +513,10 @@ footer{
         }
     }
 
-    
+    h2, h5 {
+        opacity: 0%;
+        transition: 1s;
+    }
 
     
 }
@@ -536,6 +539,8 @@ footer{
         flex-direction: column;
         text-align: center;
         margin: 25px 25px;
+        transform: translateY(100%);
+        transition: 1s;
 
         img{
             width: 250px;
