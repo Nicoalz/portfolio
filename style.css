@@ -31,6 +31,23 @@ h1 {
   }
 }
 
+h2 {
+  margin-top: 50px;
+  font-size: 96px;
+  color: #E288B7;
+  text-align: center;
+}
+@media (max-width: 1260px) {
+  h2 {
+    font-size: 80px;
+  }
+}
+@media (max-width: 750px) {
+  h2 {
+    font-size: 60px;
+  }
+}
+
 @keyframes wave {
   0% {
     background-position: 0% 50%;
@@ -39,44 +56,44 @@ h1 {
     background-position: 100% 50%;
   }
 }
-h2 {
+h3 {
   font-size: 48px;
 }
 @media (max-width: 1260px) {
-  h2 {
+  h3 {
     font-size: 36px;
   }
 }
 @media (max-width: 750px) {
-  h2 {
-    font-size: 24px;
-  }
-}
-
-h3 {
-  font-size: 36px;
-}
-@media (max-width: 1260px) {
   h3 {
     font-size: 24px;
-  }
-}
-@media (max-width: 750px) {
-  h3 {
-    font-size: 18px;
   }
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 36px;
 }
 @media (max-width: 1260px) {
   h4 {
-    font-size: 18px;
+    font-size: 24px;
   }
 }
 @media (max-width: 750px) {
   h4 {
+    font-size: 18px;
+  }
+}
+
+h5 {
+  font-size: 24px;
+}
+@media (max-width: 1260px) {
+  h5 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 750px) {
+  h5 {
     font-size: 12px;
   }
 }
@@ -403,6 +420,41 @@ footer {
 .grille-projects div:nth-of-type(5) {
   grid-column: 1/3;
   grid-row: 5;
+}
+
+.mobile-app h5 {
+  font-style: italic;
+  text-align: center;
+}
+
+.flex-app {
+  margin: 50px auto;
+  width: 1260px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 1260px) {
+  .flex-app {
+    width: 750px;
+  }
+}
+@media (max-width: 750px) {
+  .flex-app {
+    width: 300px;
+  }
+}
+.flex-app div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 25px 25px;
+}
+.flex-app div img {
+  width: 250px;
+}
+.flex-app div p {
+  color: #9FA0A8;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -40,13 +40,27 @@ h1 {
     }
 }
 
+h2 {
+    margin-top: 50px;
+    font-size: 96px;
+    color: #E288B7 ;
+    text-align: center;
+    @include max-1260px {    
+        font-size: 80px; 
+    }
+
+    @include max-750px {    
+        font-size: 60px; 
+    }
+}
+
   
 @keyframes wave {
     0% { background-position: 0% 50%; }
     100% { background-position: 100% 50%; }
 }
 
-h2{
+h3{
     font-size: 48px;
 
     @include max-1260px {    
@@ -58,7 +72,7 @@ h2{
     }
 }
 
-h3{
+h4{
     font-size: 36px;
 
     @include max-1260px {    
@@ -71,7 +85,7 @@ h3{
 }
 
 
-h4{
+h5{
     font-size: 24px;
 
     @include max-1260px {    
@@ -439,8 +453,50 @@ footer{
         grid-row: 5;
     }
 
+}
+
+
+.mobile-app {
+
+    h5{
+        font-style: italic;
+        text-align: center;
+    }
 
     
 
+    
+}
 
+.flex-app {
+    margin: 50px auto;
+    width: 1260px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include max-1260px {    
+        width: 750px;
+    }
+
+    @include max-750px {    
+        width: 300px;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 25px 25px;
+
+        img{
+            width: 250px;
+        }
+
+        p {
+            color: #9FA0A8;
+        }
+    }
+
+    
 }
