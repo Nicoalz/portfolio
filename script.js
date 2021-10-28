@@ -1,4 +1,4 @@
-if (document.title == "Nicolas BORDEAUX - Home") {
+if (document.title == "Nicolas BORDEAUX - Skills") {
     var skill_icons = document.getElementsByClassName("skill_ico");
     var skill_divs = document.getElementsByClassName("skill");
 
