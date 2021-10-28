@@ -8,6 +8,10 @@
   color: #E9ECF6;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #151B33;
 }
@@ -455,27 +459,27 @@ footer {
   }
 }
 
-.mobile-app {
+#mobile-app {
   width: 1260px;
   margin: 0 auto;
 }
 @media (max-width: 1260px) {
-  .mobile-app {
+  #mobile-app {
     width: 750px;
   }
 }
 @media (max-width: 750px) {
-  .mobile-app {
+  #mobile-app {
     width: 300px;
   }
 }
-.mobile-app h5 {
+#mobile-app h5 {
   font-style: italic;
   text-align: center;
   margin-bottom: 50px;
 }
 @media (max-width: 750px) {
-  .mobile-app h5 {
+  #mobile-app h5 {
     margin-bottom: 25px;
   }
 }

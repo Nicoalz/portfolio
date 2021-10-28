@@ -9,8 +9,14 @@
     color: #E9ECF6;
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #151B33;
+    
 }
 
 @mixin max-1260px {
@@ -485,7 +491,8 @@ footer{
 }
 
 
-.mobile-app {
+#mobile-app {
+    
     width: 1260px;
     margin: 0 auto;
     @include max-1260px {    
