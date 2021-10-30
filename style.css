@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-  font-size: 140px;
+  font-size: 130px;
   background-image: url(img/wave_bg.png);
   -webkit-background-clip: text;
   background-clip: text;
@@ -26,7 +26,7 @@ h1 {
 }
 @media (max-width: 1260px) {
   h1 {
-    font-size: 96px;
+    font-size: 80px;
   }
 }
 @media (max-width: 750px) {
@@ -127,6 +127,14 @@ h6 {
   }
 }
 
+.grid div {
+  opacity: 0%;
+  transition: 1s;
+}
+.grid div:last-of-type {
+  opacity: 100%;
+}
+
 section {
   background: linear-gradient(#06080E, #151B33);
   height: 100vh;
@@ -223,6 +231,24 @@ section {
     grid-row: 5;
   }
 }
+.grille-home div:nth-of-type(7) {
+  grid-column: 1/3;
+}
+@media (max-width: 750px) {
+  .grille-home div:nth-of-type(7) {
+    grid-column: 1;
+  }
+}
+
+footer {
+  text-align: center;
+  font-size: 10px;
+  color: #9FA0A8;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 #nav_bar {
   list-style: none;
@@ -238,12 +264,16 @@ section {
   }
 }
 #nav_bar li {
+  width: 100px;
+  background-color: red;
+  text-align: center;
   display: inline;
   margin: 0 40px;
 }
 @media (max-width: 750px) {
   #nav_bar li {
     margin: 0 20px;
+    width: 100px;
   }
 }
 #nav_bar li a {
@@ -263,22 +293,6 @@ section {
 
 .active_page {
   color: #E288B7 !important;
-}
-
-footer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-column: 1/3;
-  text-align: center;
-  font-size: 10px;
-  color: #9FA0A8;
-}
-@media (max-width: 750px) {
-  footer {
-    grid-column: 1;
-  }
 }
 
 /*-------------------------------------------------------Skills*/
@@ -375,6 +389,14 @@ footer {
 .grille-skills div:nth-of-type(11):hover {
   cursor: pointer;
 }
+.grille-skills div:nth-of-type(12) {
+  grid-column: 1/3;
+}
+@media (max-width: 750px) {
+  .grille-skills div:nth-of-type(12) {
+    grid-column: 1;
+  }
+}
 
 .skill {
   display: none !important;
@@ -386,6 +408,7 @@ footer {
 
 /*------------------------------------------------ projects */
 .grille-projects {
+  transition: 1s;
   max-width: 1260px;
   height: 100%;
   margin: 0 auto;
@@ -406,7 +429,7 @@ footer {
   .grille-projects {
     max-width: 300px;
     grid-template-columns: 300px;
-    grid-template-rows: 100px 4fr 3fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 3fr 3fr 1fr 1fr 1fr;
   }
 }
 .grille-projects div {
@@ -473,12 +496,12 @@ footer {
     text-align: center;
   }
 }
-.grille-projects div:nth-of-type(5) {
+.grille-projects div:nth-of-type(5), .grille-projects div:nth-of-type(6) {
   grid-column: 1/3;
   grid-row: 5;
 }
 @media (max-width: 750px) {
-  .grille-projects div:nth-of-type(5) {
+  .grille-projects div:nth-of-type(5), .grille-projects div:nth-of-type(6) {
     grid-column: 1;
     grid-row: 6;
   }
