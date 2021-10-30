@@ -270,14 +270,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-
     @include max-750px {
         grid-column: 1;
     }
 
     li {
         width: 100px;
-        background-color: red;
         text-align: center;
         display: inline;
         margin: 0 40px;

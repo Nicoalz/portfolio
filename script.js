@@ -1,12 +1,12 @@
 var grid = document.getElementsByClassName('grid')[0].getElementsByTagName('div');
-var gridFooter = 
+
     setTimeout(() => {
         for (i = 0; i < grid.length; i++) {
             grid[i].style.opacity = "100%";
         }
     }, 500);
 
-    
+
 
 if (document.title == "Nicolas BORDEAUX - Skills") {
     var skill_icons = document.getElementsByClassName("skill_ico");
