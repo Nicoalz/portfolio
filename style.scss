@@ -47,7 +47,7 @@ h1 {
 }
 
 h2 {
-    margin-top: 50px;
+    margin-top: 100px;
     font-size: 96px;
     color: #E288B7 ;
     text-align: center;
@@ -56,7 +56,8 @@ h2 {
     }
 
     @include max-750px {    
-        font-size: 40px; 
+        font-size: 40px;
+        margin-top: 50px;
     }
 }
 
@@ -93,6 +94,10 @@ h4{
 
 h5{
     font-size: 24px;
+    text-align: center;
+    font-style: italic;
+
+    
 
     @include max-1260px {    
         font-size: 18px; 
@@ -100,6 +105,26 @@ h5{
 
     @include max-750px {    
         font-size: 12px; 
+    }
+}
+
+h6{
+    color: #9FA0A8;
+    font-size: 18px;
+    text-align: center;
+
+    margin-bottom: 50px;
+
+        @include max-750px {    
+            margin-bottom: 25px;
+        }
+
+    @include max-1260px {    
+        font-size: 12px; 
+    }
+
+    @include max-750px {    
+        font-size: 10px; 
     }
 }
 
@@ -494,7 +519,7 @@ footer{
 #mobile-app {
     
     width: 1260px;
-    margin: 0 auto;
+    margin: 0px auto;
     @include max-1260px {    
         width: 750px;
     }
@@ -503,17 +528,7 @@ footer{
         width: 300px;
     }
 
-    h5{
-        font-style: italic;
-        text-align: center;
-        margin-bottom: 50px;
-
-        @include max-750px {    
-            margin-bottom: 25px;
-        }
-    }
-
-    h2, h5 {
+    h2, h5, h6 {
         opacity: 0%;
         transition: 1s;
     }
@@ -544,6 +559,74 @@ footer{
 
         img{
             width: 250px;
+        }
+
+        p {
+            color: #9FA0A8;
+        }
+    }
+
+    
+}
+
+
+#showcase-website {
+    
+    width: 1260px;
+    margin: 0px auto;
+    @include max-1260px {    
+        width: 750px;
+    }
+
+    @include max-750px {    
+        width: 300px;
+    }
+
+    h5{
+        a {
+            color: #E288B7;
+        }
+    }
+
+    h2, h5, h6 {
+        opacity: 0%;
+        transition: 1s;
+    }
+
+
+    
+}
+
+.flex-showcase {
+    display: flex;
+    flex-direction: column;
+
+    @include max-1260px {    
+        width: 750px;
+    }
+
+    @include max-750px {    
+        width: 300px;
+    }
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 25px 0;
+        transform: translateY(100%);
+        transition: 1s;
+
+        img{
+            width: 1260px;
+
+            @include max-1260px {    
+                width: 750px;
+            }
+        
+            @include max-750px {    
+                width: 300px;
+            }
         }
 
         p {

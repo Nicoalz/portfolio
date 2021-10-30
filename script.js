@@ -34,35 +34,59 @@ if (document.title == "Nicolas BORDEAUX - Skills") {
 }
 
 if (document.title == "Nicolas BORDEAUX - Projects") {
-    var targetScroll = document.getElementById('mobile-app');
-    var mobilesDivs = document.getElementsByClassName('flex-app')[0].getElementsByTagName('div');
-    
-    var targetOpacity = document.getElementsByClassName('grille-projects')[0].getElementsByTagName('a')[3];
-    var mobileH2 = document.getElementById('mobile-app').getElementsByTagName('h2')[0];
-    var mobileH5 = document.getElementById('mobile-app').getElementsByTagName('h5')[0];
-    console.log(mobilesDivs);
 
     
+
+    // Sélecteurs section "mobile-app"
+    var targetApp = document.getElementById('mobile-app');
+    var appH2 = document.getElementById('mobile-app').getElementsByTagName('h2')[0];
+    var appH5 = document.getElementById('mobile-app').getElementsByTagName('h5')[0];
+    var appH6 = document.getElementById('mobile-app').getElementsByTagName('h6')[0];
+    var appDivs = document.getElementsByClassName('flex-app')[0].getElementsByTagName('div');
+    
+    // Sélecteurs section "showcase-website"
+    var targetShowcase = document.getElementById('showcase-website');
+    var showcaseH2 = document.getElementById('showcase-website').getElementsByTagName('h2')[0];
+    var showcaseH5 = document.getElementById('showcase-website').getElementsByTagName('h5')[0];
+    var showcaseH6 = document.getElementById('showcase-website').getElementsByTagName('h6')[0];
+    var showcaseDivs = document.getElementsByClassName('flex-showcase')[0].getElementsByTagName('div');
+
+    
+    
     document.addEventListener('scroll', () => {
-        if (window.scrollY >= targetScroll.getBoundingClientRect().top) {
+        
+        // Fonctions section "mobile-app"
+
+        if (window.scrollY + window.innerHeight/1.5 >= targetApp.offsetTop) {
+            appH2.style.opacity = "100%";
+            appH5.style.opacity = "100%";
+            appH6.style.opacity = "100%";
+        }
+
+        if (window.scrollY + window.innerHeight/2 >= targetApp.offsetTop) {
             
-            for (i = 0; i < mobilesDivs.length; i++) {
-                mobilesDivs[i].style.transform = "translateY(0)";
+            for (i = 0; i < appDivs.length; i++) {
+                appDivs[i].style.transform = "translateY(0)";
             }
         }
 
-        if (window.scrollY >= targetOpacity.getBoundingClientRect().top) {
-            mobileH2.style.opacity = "100%";
-            mobileH5.style.opacity = "100%";
+        // Fonctions section "showcase-website"
+        
+        if (window.scrollY + window.innerHeight/1.5 >= targetShowcase.offsetTop) {
+            
+            showcaseH2.style.opacity = "100%";
+            showcaseH5.style.opacity = "100%";
+            showcaseH6.style.opacity = "100%";
         }
-    })
 
-    
-
-
-
-
-
-
+        if (window.scrollY + window.innerHeight/2 >= targetShowcase.offsetTop) {
+                
+            for (i = 0; i < showcaseDivs.length; i++) {
+                showcaseDivs[i].style.transform = "translateY(0)";
+            }
+        }
+        
+       
+    });
 }
 
