@@ -62,12 +62,18 @@ if (document.title == "Nicolas BORDEAUX - Projects") {
     var showcaseH6 = document.getElementById('showcase-website').getElementsByTagName('h6')[0];
     var showcaseDivs = document.getElementsByClassName('flex-showcase')[0].getElementsByTagName('div');
 
+    // Sélecteurs section "blog-website"
+    var targetBlog = document.getElementById('blog-website');
+    var blogH2 = document.getElementById('blog-website').getElementsByTagName('h2')[0];
+    var blogH5 = document.getElementById('blog-website').getElementsByTagName('h5')[0];
+    var blogH6 = document.getElementById('blog-website').getElementsByTagName('h6')[0];
+    var blogDivs = document.getElementsByClassName('flex-blog')[0].getElementsByTagName('div');
+
     
     
     document.addEventListener('scroll', () => {
         
         // Fonctions section "mobile-app"
-
         if (window.scrollY + window.innerHeight/1.5 >= targetApp.offsetTop) {
             appH2.style.opacity = "100%";
             appH5.style.opacity = "100%";
@@ -82,7 +88,6 @@ if (document.title == "Nicolas BORDEAUX - Projects") {
         }
 
         // Fonctions section "showcase-website"
-        
         if (window.scrollY + window.innerHeight/1.5 >= targetShowcase.offsetTop) {
             
             showcaseH2.style.opacity = "100%";
@@ -94,6 +99,21 @@ if (document.title == "Nicolas BORDEAUX - Projects") {
                 
             for (i = 0; i < showcaseDivs.length; i++) {
                 showcaseDivs[i].style.transform = "translateY(0)";
+            }
+        }
+
+        // Fonctions section "blog-website"
+        if (window.scrollY + window.innerHeight/1.5 >= targetBlog.offsetTop) {
+            
+            blogH2.style.opacity = "100%";
+            blogH5.style.opacity = "100%";
+            blogH6.style.opacity = "100%";
+        }
+
+        if (window.scrollY + window.innerHeight/2 >= targetBlog.offsetTop) {
+                
+            for (i = 0; i < blogDivs.length; i++) {
+                blogDivs[i].style.transform = "translateY(0)";
             }
         }
         
