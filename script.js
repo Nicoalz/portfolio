@@ -41,6 +41,10 @@ if (document.title == "Nicolas BORDEAUX - Skills") {
     skill_icons[6].addEventListener("click", function(){
         skill_divs[0].innerHTML = skill_divs[7].innerHTML;
     });
+
+    skill_icons[7].addEventListener("click", function(){
+        skill_divs[0].innerHTML = skill_divs[8].innerHTML;
+    });
 }
 
 if (document.title == "Nicolas BORDEAUX - Projects") {

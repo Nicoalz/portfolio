@@ -345,7 +345,7 @@ footer {
     @include max-750px {    
         max-width: 300px;
         grid-template-columns: 300px;
-        grid-template-rows: 150px 250px 4fr 1fr 2fr 130px;
+        grid-template-rows: 150px 250px 5fr 1fr 2fr 130px;
     }
 
     div {
@@ -399,7 +399,19 @@ footer {
     }
 
     div:nth-of-type(11) {
-        grid-column: 1;
+        grid-column: 1 ;
+        grid-row: 3;
+        
+        @include max-750px {
+            grid-column: 1;
+            grid-row: 4;
+        }
+        
+    }
+
+
+    div:nth-of-type(12) {
+        grid-column: 1 ;
         grid-row: 4;
         
 
@@ -423,7 +435,7 @@ footer {
         }
     }
 
-    div:nth-of-type(12) {
+    div:nth-of-type(13) {
     
         grid-column: 1 / 3;
     
