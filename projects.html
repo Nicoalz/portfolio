@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" href="img/nb_ico.jpg" type="image/icon type">
     <title>Nicolas BORDEAUX - Projects</title>
 </head>
@@ -32,10 +33,10 @@
         </div>
     </section>
     <div id="showcase-website">
-        <h2>Showcase Website</h2>
+        <h2 data-aos="zoom-in">Showcase Website</h2>
         <h5>showcase website for <a target="blank" href="https://nicoalz.github.io/flaminGOD/">FlaminGOD</a>, a NFT project</h5>
         <h6>This website was entirely flex-box made. It is fully responsive. Click on the link above to visit it !</h6>
-        <div class="flex-showcase">
+        <div  data-aos="fade-up" class="flex-showcase">
             <div>
                 <img src="img/flamingod1.png" alt="FlaminGOD website screenshot">
                 <p>FlaminGOD website screenshot</p>
@@ -43,10 +44,10 @@
         </div>
     </div>
     <div id="blog-website">
-        <h2>Symfony e-commerce</h2>
+        <h2 data-aos="zoom-in">Symfony e-commerce</h2>
         <h5>E-commerce website for a school project</h5>
         <h6>Categories, products, cart, db, admin, crud...</h6>
-        <div class="flex-blog">
+        <div data-aos="fade-up" class="flex-blog">
             <div>
                 <img src="img/symfony1.png" alt="Symfony e-commerce screenshot">
                 <p>Home page with all product categories</p>
@@ -70,10 +71,10 @@
         </div>
     </div>
     <div id="react-js">
-        <h2>React & JS</h2>
+        <h2 data-aos="zoom-in">React & JS</h2>
         <h5>Here a some funny projects using js, React, Node, socket.io ...</h5>
         <h6></h6>
-        <div class="flex-js">
+        <div data-aos="fade-up" class="flex-js">
             <div>
                 <h4>Tic Tac Toe Multiplayer</h4>
                 <img src="img/tictactoe.gif" alt="Tic Tac Toe screenshot">
@@ -92,10 +93,10 @@
         </div>
     </div>
     <div id="mobile-app">
-        <h2>Mobile App</h2>
+        <h2 data-aos="zoom-in">Mobile App</h2>
         <h5>mobile application that lists the associative events of my university.</h5>
         <h6>Users have a feed of events upcoming, they can search for an event type or specific one, add favourites events / associations... <br> This is in development, working on admin part... </h6>
-        <div class="flex-app">
+        <div data-aos="fade-up" class="flex-app">
             <div>
                 <img src="img/app1.jpg" alt="app1">
                 <p>Dark mode</p>
@@ -136,6 +137,9 @@
         © Copyright Nicolas Bordeaux 2022 · All rights reserved - nicolas.bordeaux@edu.devinci.fr
     </footer>
 </body>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="script.js"></script>
 </html>
