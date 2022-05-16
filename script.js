@@ -6,7 +6,7 @@ var grid = document.getElementsByClassName('grid')[0].getElementsByTagName('div'
         }
     }, 500);
 
-
+// Améliorer ça + ajouter librairies pour les animations scroll + meta-data
 
 if (document.title == "Nicolas BORDEAUX - Skills") {
     var skill_icons = document.getElementsByClassName("skill_ico");
