@@ -538,10 +538,6 @@ footer {
     width: 300px;
   }
 }
-#mobile-app h2, #mobile-app h5, #mobile-app h6 {
-  opacity: 0%;
-  transition: 1s;
-}
 
 .flex-app {
   display: flex;
@@ -563,8 +559,6 @@ footer {
   flex-direction: column;
   text-align: center;
   margin: 25px 25px;
-  transform: translateY(100%);
-  transition: 1s;
 }
 .flex-app div img {
   width: 250px;
@@ -590,10 +584,6 @@ footer {
 #showcase-website h5 a {
   color: #E288B7;
 }
-#showcase-website h2, #showcase-website h5, #showcase-website h6 {
-  opacity: 0%;
-  transition: 1s;
-}
 
 .flex-showcase {
   display: flex;
@@ -614,8 +604,6 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   margin: 25px 0;
-  transform: translateY(100%);
-  transition: 1s;
 }
 .flex-showcase div img {
   width: 1260px;
@@ -651,10 +639,6 @@ footer {
 #blog-website h5 a {
   color: #E288B7;
 }
-#blog-website h2, #blog-website h5, #blog-website h6 {
-  opacity: 0%;
-  transition: 1s;
-}
 
 .flex-blog {
   display: flex;
@@ -675,8 +659,6 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   margin: 25px 0;
-  transform: translateY(100%);
-  transition: 1s;
 }
 .flex-blog div img {
   width: 1260px;
@@ -692,6 +674,62 @@ footer {
   }
 }
 .flex-blog div p {
+  text-align: center;
+  color: #9FA0A8;
+}
+
+#react-js {
+  width: 1260px;
+  margin: 0px auto;
+}
+@media (max-width: 1260px) {
+  #react-js {
+    width: 750px;
+  }
+}
+@media (max-width: 750px) {
+  #react-js {
+    width: 300px;
+  }
+}
+#react-js h5 a {
+  color: #E288B7;
+}
+
+.flex-js {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1260px) {
+  .flex-js {
+    width: 750px;
+  }
+}
+@media (max-width: 750px) {
+  .flex-js {
+    width: 300px;
+  }
+}
+.flex-js div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 25px 0;
+}
+.flex-js div img {
+  width: 1260px;
+}
+@media (max-width: 1260px) {
+  .flex-js div img {
+    width: 750px;
+  }
+}
+@media (max-width: 750px) {
+  .flex-js div img {
+    width: 300px;
+  }
+}
+.flex-js div p {
   text-align: center;
   color: #9FA0A8;
 }

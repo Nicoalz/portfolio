@@ -582,10 +582,6 @@ footer {
         width: 300px;
     }
 
-    h2, h5, h6 {
-        opacity: 0%;
-        transition: 1s;
-    }
 
     
 }
@@ -608,8 +604,6 @@ footer {
         flex-direction: column;
         text-align: center;
         margin: 25px 25px;
-        transform: translateY(100%);
-        transition: 1s;
 
         img{
             width: 250px;
@@ -642,11 +636,6 @@ footer {
         }
     }
 
-    h2, h5, h6 {
-        opacity: 0%;
-        transition: 1s;
-    }
-
 
     
 }
@@ -668,8 +657,6 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         margin: 25px 0;
-        transform: translateY(100%);
-        transition: 1s;
 
         img{
             width: 1260px;
@@ -709,11 +696,6 @@ footer {
         }
     }
 
-    h2, h5, h6 {
-        opacity: 0%;
-        transition: 1s;
-    }
-
 
     
 }
@@ -735,8 +717,66 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         margin: 25px 0;
-        transform: translateY(100%);
-        transition: 1s;
+
+        img{
+            width: 1260px;
+
+            @include max-1260px {    
+                width: 750px;
+            }
+        
+            @include max-750px {    
+                width: 300px;
+            }
+        }
+
+        p {
+            text-align: center;
+            color: #9FA0A8;
+        }
+    }
+
+    
+}
+
+#react-js {
+    
+    width: 1260px;
+    margin: 0px auto;
+    @include max-1260px {    
+        width: 750px;
+    }
+
+    @include max-750px {    
+        width: 300px;
+    }
+
+    h5{
+        a {
+            color: #E288B7;
+        }
+    }
+
+    
+}
+
+.flex-js {
+    display: flex;
+    flex-direction: column;
+
+    @include max-1260px {    
+        width: 750px;
+    }
+
+    @include max-750px {    
+        width: 300px;
+    }
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 25px 0;
 
         img{
             width: 1260px;
